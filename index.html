@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankalp Dawada | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sankalp Dawada</div>
+            <ul class="nav-links">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search Projects..." onkeyup="filterProjects()">
+                    <button type="button" onclick="filterProjects()">🔍</button>
+                </div>                
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="intro">
+            <h1>Hi, I'm Sankalp Dawada</h1>
+            <p>A computer engineering student passionate about technology and innovation. I specialize in web development, app development, data science, and machine learning. My goal is to create impactful solutions that enhance user experiences and drive business success.</p>
+            <p>Feel free to explore my projects and connect with me!</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project" data-title="Project 1" data-date="Jan 2024">
+                <div class="project-header">
+                    <h3>Project 1</h3>
+                    <span class="date">Jan 2024</span>
+                </div>
+                <div class="project-content">
+                    <img src="project1.png" alt="Project 1 Screenshot">
+                    <p>Description of Project 1. A brief summary about what it does, tools used, and the outcome.</p>
+                </div>
+                <a class="project-link" href="https://github.com/yourusername/project1" target="_blank">View Project Code</a>
+            </div>
+
+            <div class="project" data-title="Project 2" data-date="Dec 2023">
+                <div class="project-header">
+                    <h3>Project 2</h3>
+                    <span class="date">Dec 2023</span>
+                </div>
+                <div class="project-content">
+                    <img src="project2.png" alt="Project 2 Screenshot">
+                    <p>Description of Project 2. A brief summary about what it does, tools used, and the outcome.</p>
+                </div>
+                <a class="project-link" href="https://github.com/yourusername/project2" target="_blank">View Project Code</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sankalp Dawada. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function filterProjects() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const projects = document.querySelectorAll('.project');
+
+        projects.forEach(project => {
+            const title = project.getAttribute('data-title').toLowerCase();
+            project.style.display = title.includes(input) ? 'block' : 'none';
+        });
+    }
+</script>
+
+</html>
