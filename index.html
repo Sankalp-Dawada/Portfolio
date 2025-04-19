@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sankalp Dawada | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
@@ -24,6 +24,7 @@
     </header>
 
     <main>
+        
         <section id="about" class="intro">
             <h1>Hi, I'm Sankalp Dawada</h1>
             <p>A computer engineering student passionate about technology and innovation. I specialize in web development, app development, data science, and machine learning. My goal is to create impactful solutions that enhance user experiences and drive business success.</p>
@@ -57,22 +58,24 @@
                 <a class="project-link" href="https://github.com/yourusername/project2" target="_blank">View Project Code</a>
             </div>
         </section>
+
+        <section id="add-project">
+            <h2>Add New Project</h2>
+            <form id="projectForm" enctype="multipart/form-data">
+                <input type="text" name="title" placeholder="Project Title" required>
+                <label>Upload Project File (.md, .txt, etc.):</label>
+                <input type="file" name="projectFile" required>
+                <label>Upload Image:</label>
+                <input type="file" name="projectImage">
+                <button type="submit">Generate</button>
+            </form>
+            <div id="newProjectPreview"></div>
+        </section>        
     </main>
 
     <footer>
         <p>© 2025 Sankalp Dawada. All rights reserved.</p>
     </footer>
 </body>
-<script>
-    function filterProjects() {
-        const input = document.getElementById('searchInput').value.toLowerCase();
-        const projects = document.querySelectorAll('.project');
-
-        projects.forEach(project => {
-            const title = project.getAttribute('data-title').toLowerCase();
-            project.style.display = title.includes(input) ? 'block' : 'none';
-        });
-    }
-</script>
-
+<script src ="./src/script.js"></script>
 </html>
