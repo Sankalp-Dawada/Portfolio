@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
+// Using Firebase CDN compatibility version
 const firebaseConfig = {
   apiKey: "AIzaSyBfmzw8xUyr2IvtKKnPmOQYtZDLQEw8qpM",
   authDomain: "my-portfolio-8ee84.firebaseapp.com",
@@ -12,9 +13,11 @@ const firebaseConfig = {
   measurementId: "G-HTR6YBZBLC"
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// Initialize Firebase with compat version
+firebase.initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
+
+// Export the Firestore instance
+const db = firebase.firestore();
 
 export { db };
