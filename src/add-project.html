@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Project | Admin</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to Portfolio</a></li>
+        <li><button onclick="logout()">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Add New Project</h1>
+      <form id="projectForm" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Project Title" required>
+        <label>Upload Project File (.md, .txt, etc.):</label>
+        <input type="file" name="projectFile" required>
+        <label>Upload Image:</label>
+        <input type="file" name="projectImage" accept="image/*">
+        <button type="submit">Generate & Upload</button>
+      </form>
+      <div id="newProjectPreview"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sankalp Dawada. All rights reserved.</p>
+</footer>
+</body>
+<script type="module" src="./add-project.js" defer></script>
+
+</html>

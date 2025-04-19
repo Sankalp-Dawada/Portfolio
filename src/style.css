@@ -151,3 +151,29 @@ footer {
 .search-bar button:hover {
     background-color: #0056b3;
 }
+
+.floating-add-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007BFF;
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* text-align: center; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-decoration: none;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.floating-add-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
