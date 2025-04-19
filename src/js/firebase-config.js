@@ -1,8 +1,7 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
+// Using Firebase CDN compatibility version - no imports needed
+// We're using the global 'firebase' object from CDN
 
-// Using Firebase CDN compatibility version
+// Initialize Firebase with your config
 const firebaseConfig = {
   apiKey: "AIzaSyBfmzw8xUyr2IvtKKnPmOQYtZDLQEw8qpM",
   authDomain: "my-portfolio-8ee84.firebaseapp.com",
@@ -13,11 +12,10 @@ const firebaseConfig = {
   measurementId: "G-HTR6YBZBLC"
 };
 
-// Initialize Firebase with compat version
+// Initialize Firebase app
 firebase.initializeApp(firebaseConfig);
 
-
-// Export the Firestore instance
+// Export the Firestore instance for use in other modules
 const db = firebase.firestore();
 
 export { db };
