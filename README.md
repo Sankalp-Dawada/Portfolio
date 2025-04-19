@@ -117,5 +117,5 @@ MIT License. Feel free to use and modify!
 ## 👨‍💻 Author
 
 **Sankalp Dawada**  
-Connect with me on [LinkedIn](https://linkedin.com/in/sankalpdawada) | GitHub: [@yourusername](https://github.com/yourusername)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/sankalp-dawada-578782321/) | GitHub: [@Sankalp-Dawada](https://github.com/Sankalp-Dawada)
 
