@@ -1,8 +1,30 @@
-<form id="loginForm">
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <title>Login | Admin | MyPortfolio</title>
+        <script type="module" src="../js/login.js"></script>
+        <script type="module" src="../js/auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Admin Login</h1>
+  </header>
+
+  <form id="loginForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Email" autocomplete="email" required />
+
+    <label for="password">Password:</label>
+    <div class="password-container">
+      <input type="password" id="password" placeholder="Password" autocomplete="current-password" required />
+      <span class="toggle-password" onclick="togglePassword()">
+        <img id="eyeIcon" src="../imgs/hidepassword.png" alt="toggle password" />
+      </span>
+    </div>
     <button type="submit">Login</button>
   </form>
-  
-  <script src="../js/login.js"></script>
-  
+</body>
+</html>
