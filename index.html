@@ -16,18 +16,22 @@
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search Projects..." onkeyup="filterProjects()">
                     <button type="button" onclick="filterProjects()">🔍</button>
-                </div>                
+                </div>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li id="loginNavItem"><a href="./src/html/login.html">Login</a></li>
+                <li id="logoutNavItem" style="display: none;"><a href="#" id="logoutBtn">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        
+
         <section id="about" class="intro">
             <h1>Hi, I'm Sankalp Dawada</h1>
-            <p>A computer engineering student passionate about technology and innovation. I specialize in web development, app development, data science, and machine learning. My goal is to create impactful solutions that enhance user experiences and drive business success.</p>
+            <p>A computer engineering student passionate about technology and innovation. I specialize in web
+                development, app development, data science, and machine learning. My goal is to create impactful
+                solutions that enhance user experiences and drive business success.</p>
             <p>Feel free to explore my projects and connect with me!</p>
         </section>
 
@@ -43,7 +47,8 @@
                     <img src="project1.png" alt="Project 1 Screenshot">
                     <p>Description of Project 1. A brief summary about what it does, tools used, and the outcome.</p>
                 </div>
-                <a class="project-link" href="https://github.com/yourusername/project1" target="_blank">View Project Code</a>
+                <a class="project-link" href="https://github.com/yourusername/project1" target="_blank">View Project
+                    Code</a>
             </div>
 
             <div class="project" data-title="Project 2" data-date="Dec 2023">
@@ -55,7 +60,8 @@
                     <img src="project2.png" alt="Project 2 Screenshot">
                     <p>Description of Project 2. A brief summary about what it does, tools used, and the outcome.</p>
                 </div>
-                <a class="project-link" href="https://github.com/yourusername/project2" target="_blank">View Project Code</a>
+                <a class="project-link" href="https://github.com/yourusername/project2" target="_blank">View Project
+                    Code</a>
             </div>
         </section>
 
@@ -79,5 +85,6 @@
         <p>© 2025 Sankalp Dawada. All rights reserved.</p>
     </footer>
 </body>
-<script src ="./src/script.js"></script>
+<script src="./src/script.js"></script>
+
 </html>
